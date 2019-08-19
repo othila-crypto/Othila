@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=OTH
+Comment=OTH P2P Cryptocurrency
+Comment[fr]=OTH, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=OTH, eşten eşe kriptografik sanal para birimi
+Exec=othila-qt %u
+Terminal=false
+Type=Application
+Icon=othila128
+MimeType=x-scheme-handler/othila;
+Categories=Office;Finance;

@@ -1,0 +1,11 @@
+[Protocol]
+exec=othila-qt '%u'
+protocol=othila
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
