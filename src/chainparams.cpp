@@ -134,8 +134,7 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x2bd9ed9efbf5395e99d0de5aeaa5ef04fa4dfd5de05bfee899952813d03dd4a3"));
 
         vFixedSeeds.clear();
-        vSeeds.clear();
-        //vSeeds.push_back(CDNSSeedData("", "")); // Primary DNS Seeder Nodes
+        vSeeds.push_back(CDNSSeedData("othi.la", "node.othi.la")); // Primary DNS Seeder Nodes
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 73);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -146,7 +145,7 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = false; // Default true
+        fMiningRequiresPeers = true;
         fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
@@ -158,7 +157,7 @@ public:
         nPoolMaxTransactions = 3;
         strSporkKey = "0499A7AF4806FC6DE640D23BC5936C29B77ADF2174B4F45492727F897AE63CF8D27B2F05040606E0D14B547916379FA10716E344E745F880EDC037307186AA25B7";
         strSporkKeyOld = "04B433E6598390C992F4F022F20D3B4CBBE691652EE7C48243B81701CBDB7CC7D7BF0EE09E154E6FCBF2043D65AF4E9E97B89B5DBAF830D83B9B7F469A6C45A717";
-        strObfuscationPoolDummyAddress = "D87q2gC9j6nNrnzCsg4aY6bHMLsT9nUhEw";
+        strObfuscationPoolDummyAddress = "We8erMVZdh6u7CoCXgkDDYEqogmc25uG6Y";
         nStartMasternodePayments = 1403728576;
     }
 
