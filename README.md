@@ -20,12 +20,12 @@ Othila is an open source crypto-currency focused on fast transactions with low f
 <table>
 <th colspan=4>OTH Premine</th>
 <tr><th>Block Height</th><th>Reward Amount</th><th>Notes</th></tr>
-<tr><td>1-100</td><td>41,000,000 OTH</td><td>Initial Pre-mine</td></tr>
+<tr><td>1</td><td>41,000,000 OTH</td><td>Initial Pre-mine</td></tr>
 </table>
 
 ### PoS Rewards Breakdown
 
 <table>
-<th>Phase</th><th>Block Height</th><th>Reward</th>
-<tr><td>Infiniy</td><td>101+</td><td>6 OTH</td></tr>
+<th>Block Height</th><th>Staking Reward</th><th>Masternodes</th><th>Masternode Stakers</th>
+<tr><td>2-Infinity</td><td>6 OTH</td><td>4 OTH</td><td>2 OTH</td></tr>
 </table>
