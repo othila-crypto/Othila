@@ -64,7 +64,9 @@ static const Checkpoints::CCheckpointData data = {
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
-    boost::assign::map_list_of(0, uint256("0x001"));
+    boost::assign::map_list_of
+    (0, uint256("0x000005d489f4bd6467c4e8726d213553f0b60c495287f6dbedd46c09df08e0e7"));
+
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
     1560945815,
@@ -188,10 +190,10 @@ public:
         nTargetTimespan = 1 * 60; // OTH: 1 day
         nTargetSpacing = 1 * 60;  // OTH: 1 minute
         nLastPOWBlock = 100;
-        nMaturity = 15;
-        nMasternodeCountDrift = 4;
+        nMaturity = 20;
+        nMasternodeCountDrift = 20;
         nModifierUpdateBlock = 101; //approx Mon, 17 Apr 2017 04:00:00 GMT
-        nMaxMoneyOut = 43199500 * COIN;
+        nMaxMoneyOut = 21000000 * COIN;
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 9908000; //Trigger a recalculation of accumulators
         nEnforceNewSporkKey = 1521604800; //!> Sporks signed after Wednesday, March 21, 2018 4:00:00 AM GMT must use the new spork key
@@ -205,7 +207,8 @@ public:
         assert(hashGenesisBlock == uint256("0x000005d489f4bd6467c4e8726d213553f0b60c495287f6dbedd46c09df08e0e7"));
 
         vFixedSeeds.clear();
-        vSeeds.clear();
+        vSeeds.push_back(CDNSSeedData("othi.la", "t01.othi.la"));
+        vSeeds.push_back(CDNSSeedData("othi.la", "t02.othi.la"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 139); // Testnet othila addresses start with 'x' or 'y'
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 19);  // Testnet othila script addresses start with '8' or '9'
@@ -220,7 +223,7 @@ public:
         convertSeed6(vFixedSeeds, pnSeed6_test, ARRAYLEN(pnSeed6_test));
 
         fMiningRequiresPeers = true;
-        fAllowMinDifficultyBlocks = true;
+        fAllowMinDifficultyBlocks = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
