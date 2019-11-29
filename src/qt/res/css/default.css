@@ -906,7 +906,7 @@ QWidget .QFrame#frame_Balances { /* Upper left side */
 	border-radius: 5px;
 }
 
-QWidget .QFrame#frame_CombinedBalances { /* Lower left side */
+QWidget .QFrame#frame_Links { /* Lower left side */
 	min-width: 340px;
 	background-color: #fff;
 	border-radius: 5px;
@@ -921,6 +921,43 @@ QWidget .QFrame#frame_RecentTransactions { /* Right side */
 QWidget .QFrame#frame_Balances > .QLabel {
 	min-width: 190px;
 	font-weight: normal;
+}
+
+QWidget .QFrame#frame_Links > .QLabel {
+	min-width: 190px;
+	font-weight: normal;
+}
+
+QWidget .QFrame#frame_Links .QLabel#label_6 { /* Othila Links */
+qproperty-alignment: 'AlignVCenter | AlignLeft';
+	min-width: 160px;
+	background-color: transparent;
+	color: #1b202c;
+	font-weight: bold;
+	font-size: 14px;
+	margin-right: 5px;
+	padding-right: 5px;
+}
+
+QWidget .QFrame#frame_Links .QLabel#labelLinkText_1,
+QWidget .QFrame#frame_Links .QLabel#labelLinkText_2,
+QWidget .QFrame#frame_Links .QLabel#labelLinkText_3,
+QWidget .QFrame#frame_Links .QLabel#labelLinkText_4,
+QWidget .QFrame#frame_Links .QLabel#labelLinkText_5 {
+	color: #1b202c;
+	margin-right: 5px;
+	padding-right: 5px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+QWidget .QFrame#frame_Links .QLabel#labelLink_1,
+QWidget .QFrame#frame_Links .QLabel#labelLink_2,
+QWidget .QFrame#frame_Links .QLabel#labelLink_3,
+QWidget .QFrame#frame_Links .QLabel#labelLink_4,
+QWidget .QFrame#frame_Links .QLabel#labelLink_5 {
+	color: #1b202c;
+	margin-left: 0px;
 }
 
 QWidget .QFrame#frame_Balances .QLabel#label_5 { /* Othila Balances Label */

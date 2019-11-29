@@ -135,6 +135,9 @@ OverviewPage::OverviewPage(QWidget* parent) : QWidget(parent),
 
     // start with displaying the "out of sync" warnings
     showOutOfSyncWarning(true);
+
+    // Show links
+    SetLinks();
 }
 
 void OverviewPage::handleTransactionClicked(const QModelIndex& index)
@@ -331,6 +334,15 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
     ui->labelWalletStatus->setVisible(fShow);
     ui->labelTransactionsStatus->setVisible(fShow);
+}
+
+void OverviewPage::SetLinks()
+{
+    ui->labelLink_1->setText("<a href=\"https://www.othi.la\">https://www.othi.la</a>");
+    ui->labelLink_2->setText("<a href=\"http://explorer.othi.la\">http://explorer.othi.la</a>");
+    ui->labelLink_3->setText("<a href=\"https://github.com/othila-crypto/Othila\">https://github.com/othila-crypto/Othila</a>");
+    ui->labelLink_4->setText("<a href=\"https://www.facebook.com/othilacoin/\">https://www.facebook.com/othilacoin/</a>");
+    ui->labelLink_5->setText("<a href=\"mailto:info@othi.la\">info@othi.la</a>");
 }
 
 void OverviewPage::hideOrphans(bool fHide)
