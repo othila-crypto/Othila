@@ -47,7 +47,7 @@ QT_TRANSLATE_NOOP("othila-core", ""
 "Delete all wallet transactions and only recover those parts of the "
 "blockchain through -rescan on startup"),
 QT_TRANSLATE_NOOP("othila-core", ""
-"Disable all OTH specific functionality (Masternodes, Zerocoin, SwiftX, "
+"Disable all OTH specific functionality (Masternodes, SwiftX, "
 "Budgeting) (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("othila-core", ""
 "Distributed under the MIT software license, see the accompanying file "
