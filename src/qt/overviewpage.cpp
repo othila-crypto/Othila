@@ -27,8 +27,9 @@
 #include <QTimer>
 
 #define DECORATION_SIZE 48
-#define ICON_OFFSET 16
-#define NUM_ITEMS 9
+#define ICON_SIZE 30
+#define ICON_OFFSET 8
+#define NUM_ITEMS 10
 
 extern CWallet* pwalletMain;
 
@@ -47,12 +48,12 @@ public:
         QIcon icon = qvariant_cast<QIcon>(index.data(Qt::DecorationRole));
         QRect mainRect = option.rect;
         mainRect.moveLeft(ICON_OFFSET);
-        QRect decorationRect(mainRect.topLeft(), QSize(DECORATION_SIZE, DECORATION_SIZE));
-        int xspace = DECORATION_SIZE + 8;
+        QRect decorationRect(mainRect.topLeft(), QSize(ICON_SIZE, ICON_SIZE));
+        int xspace = DECORATION_SIZE;
         int ypad = 6;
-        int halfheight = (mainRect.height() - 2 * ypad) / 2;
-        QRect amountRect(mainRect.left() + xspace, mainRect.top() + ypad, mainRect.width() - xspace - ICON_OFFSET, halfheight);
-        QRect addressRect(mainRect.left() + xspace, mainRect.top() + ypad + halfheight, mainRect.width() - xspace, halfheight);
+        int halfheight = (DECORATION_SIZE - 2 * ypad) / 2;
+        QRect amountRect(mainRect.left() + xspace, mainRect.top(), mainRect.width() - xspace - ICON_OFFSET, halfheight);
+        QRect addressRect(mainRect.left() + xspace, mainRect.top() + halfheight, mainRect.width() - xspace, halfheight);
         icon.paint(painter, decorationRect);
 
         QDateTime date = index.data(TransactionTableModel::DateRole).toDateTime();
@@ -332,11 +333,11 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 
 void OverviewPage::SetLinks()
 {
-    ui->labelLink_1->setText("<a href=\"https://www.othi.la\">https://www.othi.la</a>");
-    ui->labelLink_2->setText("<a href=\"http://explorer.othi.la\">http://explorer.othi.la</a>");
-    ui->labelLink_3->setText("<a href=\"https://github.com/othila-crypto/Othila\">https://github.com/othila-crypto/Othila</a>");
-    ui->labelLink_4->setText("<a href=\"https://www.facebook.com/othilacoin/\">https://www.facebook.com/othilacoin/</a>");
-    ui->labelLink_5->setText("<a href=\"mailto:info@othi.la\">info@othi.la</a>");
+    ui->labelLink_1->setText("<a href=\"https://www.othi.la\" style=\"color: #ccc;\">https://www.othi.la</a>");
+    ui->labelLink_2->setText("<a href=\"http://explorer.othi.la\" style=\"color: #ccc;\">http://explorer.othi.la</a>");
+    ui->labelLink_3->setText("<a href=\"https://github.com/othila-crypto/Othila\" style=\"color: #ccc;\">https://github.com/othila-crypto/Othila</a>");
+    ui->labelLink_4->setText("<a href=\"https://www.facebook.com/othilacoin/\" style=\"color: #ccc;\">https://www.facebook.com/othilacoin/</a>");
+    ui->labelLink_5->setText("<a href=\"mailto:info@othi.la\" style=\"color: #ccc;\">info@othi.la</a>");
 }
 
 void OverviewPage::hideOrphans(bool fHide)
