@@ -252,12 +252,7 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_othila.png \
-  qt/res/icons/unit_mothila.png \
-  qt/res/icons/unit_uothila.png \
-  qt/res/icons/unit_tothila.png \
-  qt/res/icons/unit_tmothila.png \
-  qt/res/icons/unit_tuothila.png
+  qt/res/icons/unit_list.png
 
 BITCOIN_QT_BASE_CPP = \
   qt/bantablemodel.cpp \
@@ -339,7 +334,8 @@ RES_IMAGES = \
   qt/res/images/upArrow_small.png \
   qt/res/images/leftArrow_small_dark.png \
   qt/res/images/rightArrow_small_dark.png \
-  qt/res/images/qtreeview_selected.png 
+  qt/res/images/qtreeview_selected.png \
+  qt/res/images/wallet-background.png
 
 RES_CSS = \
   qt/res/css/default.css
