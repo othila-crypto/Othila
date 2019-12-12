@@ -102,7 +102,7 @@
              <item>
               <layout class="QVBoxLayout" name="verticalLayout_left" stretch="1,0">
                <item>
-                <widget class="QFrame" name="frameObfuscation">
+                <widget class="QFrame" name="frameObfuscation_1">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
@@ -550,7 +550,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QFrame" name="frameObfuscation">
+                <widget class="QFrame" name="frameObfuscation_1">
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
@@ -584,9 +584,9 @@
                     <property name="frameShadow">
                      <enum>QFrame::Raised</enum>
                     </property>
-                    <layout class="QVBoxLayout" name="verticalLayout_4">
+                    <layout class="QVBoxLayout" name="verticalLayout_5">
                      <item>
-                      <layout class="QHBoxLayout" name="horizontalLayout_4">
+                      <layout class="QHBoxLayout" name="horizontalLayout_5">
                        <item>
                         <widget class="QLabel" name="label_6">
                          <property name="minimumSize">
@@ -623,7 +623,7 @@
                       </layout>
                      </item>
                      <item>
-                      <widget class="Line" name="line_Balance">
+                      <widget class="Line" name="line_Balance_1">
                        <property name="minimumSize">
                         <size>
                          <width>0</width>
@@ -762,7 +762,7 @@
                       </layout>
                      </item>
                      <item>
-                      <spacer name="verticalSpacer">
+                      <spacer name="verticalSpacer_2">
                        <property name="orientation">
                         <enum>Qt::Vertical</enum>
                        </property>
